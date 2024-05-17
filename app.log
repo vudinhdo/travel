@@ -1,0 +1,33 @@
+2024-04-26 16:39:58,697 INFO vudinhdo.web.travel.TravelApplicationTests [main] Starting TravelApplicationTests using Java 21.0.2 with PID 5840 (started by Vu Dinh Do in C:\laragon\www\travel)
+2024-04-26 16:39:58,698 INFO vudinhdo.web.travel.TravelApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2024-04-26 16:39:59,404 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-26 16:39:59,423 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2024-04-26 16:39:59,907 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-26 16:39:59,979 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-26 16:40:00,015 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-04-26 16:40:00,279 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-26 16:40:00,316 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-04-26 16:40:00,665 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c0de229
+2024-04-26 16:40:00,667 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-04-26 16:40:01,061 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-26 16:40:01,065 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26 16:40:01,206 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-26 16:40:01,532 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-26 16:40:01,645 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 33654991-5ba0-4a5d-8ae9-aa960ad0acd5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-04-26 16:40:01,779 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a7dcfb7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50b4e7b2, org.springframework.security.web.context.SecurityContextHolderFilter@19f99aaf, org.springframework.security.web.header.HeaderWriterFilter@5b324447, org.springframework.web.filter.CorsFilter@50008974, org.springframework.security.web.csrf.CsrfFilter@71cc0e35, org.springframework.security.web.authentication.logout.LogoutFilter@1afa048a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@770cbe5d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1b6683c4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5274830e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4745bcc6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19f1f330, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@143fe09c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a0ee80, org.springframework.security.web.access.ExceptionTranslationFilter@4af44f2a, org.springframework.security.web.access.intercept.AuthorizationFilter@599310ab]
+2024-04-26 16:40:01,849 INFO vudinhdo.web.travel.TravelApplicationTests [main] Started TravelApplicationTests in 3.389 seconds (process running for 4.153)
+2024-04-26 16:40:02,570 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26 16:40:02,571 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-04-26 16:40:02,579 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-04-26 16:40:15,164 INFO vudinhdo.web.travel.TravelApplicationTests [main] Starting TravelApplicationTests using Java 21.0.2 with PID 18776 (started by Vu Dinh Do in C:\laragon\www\travel)
+2024-04-26 16:40:15,166 INFO vudinhdo.web.travel.TravelApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2024-04-26 16:40:15,914 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-26 16:40:15,934 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+2024-04-26 16:40:16,402 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-26 16:40:16,460 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-26 16:40:16,490 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
