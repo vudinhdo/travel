@@ -1,0 +1,45 @@
+<div th:fragment="AdminAccountAdd">
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <h1 class="h3 mb-2 text-gray-800">Add Account</h1>
+
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Add Accounts</h6>
+            </div>
+
+            <div class="container" style="margin-bottom: 2em;margin-top: 2em">
+                <form method="post" action="/admin/account-add-form" th:object="${accounts}">
+                    <div class="mb-3">
+                        <label for="exampleInputFullName1" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" name="fullName" id="exampleInputFullName1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputUsername1" class="form-label">Username</label>
+                        <input type="text" class="form-control" name="username" id="exampleInputUsername1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPhoneNumber1" class="form-label">Phone Number</label>
+                        <input type="text" name="phoneNumber" class="form-control" id="exampleInputPhoneNumber1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
