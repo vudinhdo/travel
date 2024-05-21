@@ -16,7 +16,7 @@ public class ConfigSecurity {
         httpSecurity.authorizeHttpRequests().requestMatchers("/").permitAll();
         httpSecurity.authorizeHttpRequests().anyRequest().authenticated();
 
-        httpSecurity.formLogin();
+        httpSecurity.formLogin().loginPage("/login").permitAll();
         return httpSecurity.build();
     }
 

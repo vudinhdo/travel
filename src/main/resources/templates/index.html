@@ -1,571 +1,694 @@
-<!-- Navbar & Hero End -->
+<div th:fragment="IndexPageClient">
 
-<div th:fragment="Index">
-    <div class="container-xxl py-5">
+    <div class="hero-wrap js-fullheight" style="background-image: url('/assets/images/bg_5.jpg');">
+        <div class="overlay"></div>
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="/assets/img/about.jpg" alt=""
-                             style="object-fit: cover;">
-                    </div>
+            <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+                <div class="col-md-7 ftco-animate">
+                    <p1 class="bg-text">
+                        <span class="subheading">Chào mừng đến với Du lịch Đó đây</span>
+                        <h1 class="mb-4">Khám phá địa điểm yêu thích của bạn với chúng tôi</h1>
+                        <p class="caps">Du lịch đến bất kỳ nơi đâu trên thế giới, mà không phải đi lòng vòng</p>
+                    </p1>
+                    <!-- <span class="subheading">Chào mừng đến với Du lịch Đó đây</span>
+                    <h1 class="mb-4">Khám phá địa điểm yêu thích của bạn với chúng tôi</h1>
+                    <p class="caps">Du lịch đến bất kỳ nơi đâu trên thế giới, mà không phải đi lòng vòng</p> -->
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
-                    <h1 class="mb-4">Welcome to <span class="text-primary">Tourist</span></h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit.</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat
-                        amet</p>
-                    <div class="row gy-2 gx-4 mb-4">
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>First Class Flights</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Handpicked Hotels</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>5 Star Accommodations</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>150 Premium City Tours
-                            </p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
-                </div>
+                <a href="https://vimeo.com/45830194"
+                   class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+                    <span class="fa fa-play"></span>
+                </a>
             </div>
         </div>
     </div>
-    <!-- About End -->
 
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Services</h6>
-                <h1 class="mb-5">Our Services</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                            <h5>WorldWide Tours</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
-                            <h5>Hotel Reservation</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-user text-primary mb-4"></i>
-                            <h5>Travel Guides</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
-                            <h5>Event Management</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                            <h5>WorldWide Tours</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
-                            <h5>Hotel Reservation</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-user text-primary mb-4"></i>
-                            <h5>Travel Guides</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
-                            <h5>Event Management</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="ftco-search d-flex justify-content-center">
+                        <div class="row">
+                            <div class="col-md-12 nav-link-wrap">
+                                <div class="nav nav-pills text-center" id="v-pills-tab" role="tablist"
+                                     aria-orientation="vertical">
+                                    <a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill"
+                                       href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Tìm kiếm
+                                        Tour</a>
+
+                                    <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
+                                       aria-controls="v-pills-2" aria-selected="false">Khách sạn</a>
+
+                                </div>
+                            </div>
+                            <div class="col-md-12 tab-wrap">
+
+                                <div class="tab-content" id="v-pills-tabContent">
+
+                                    <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+                                         aria-labelledby="v-pills-nextgen-tab">
+                                        <form action="#" class="search-property-1">
+                                            <div class="row no-gutters">
+                                                <div class="col-md d-flex">
+                                                    <div class="form-group p-4 border-0">
+                                                        <label for="diemden">Điểm đến</label>
+                                                        <div class="form-field">
+                                                            <div class="icon"><span class="fa fa-search"></span></div>
+                                                            <input id="diemden" type="text" class="form-control"
+                                                                   placeholder="Tìm kiếm địa điểm">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md d-flex">
+                                                    <div class="form-group p-4">
+                                                        <label for="thoigian">Thời gian Check-in</label>
+                                                        <div class="form-field">
+                                                            <div class="icon"><span class="fa fa-calendar"></span></div>
+                                                            <input type="text" id="thoigian" class="form-control checkin_date"
+                                                                   placeholder=" Ngày Check-in">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md d-flex">
+                                                    <div class="form-group p-4">
+                                                        <label for="thoigiancheck">Thời gian Check-out</label>
+                                                        <div class="form-field">
+                                                            <div class="icon"><span class="fa fa-calendar"></span></div>
+                                                            <input type="text" id="thoigiancheck" class="form-control checkout_date"
+                                                                   placeholder="Ngày Check-out">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md d-flex">
+                                                    <div class="form-group p-4">
+                                                        <label for="hagia">Giới hạn Giá</label>
+                                                        <div class="form-field">
+                                                            <div class="select-wrap">
+                                                                <div class="icon"><span class="fa fa-chevron-down"></span>
+                                                                </div>
+                                                                <select name="" id="hagia" class="form-control">
+                                                                    <option value="">1,000,000 VNĐ</option>
+                                                                    <option value="">1,500,000 VNĐ</option>
+                                                                    <option value="">2,000,000 VNĐ</option>
+                                                                    <option value="">2,500,000 VNĐ</option>
+                                                                    <option value="">3,500,000 VNĐ</option>
+                                                                    <option value="">4,500,000 VNĐ</option>
+                                                                    <option value="">5,000,000 VNĐ</option>
+                                                                    <option value="">5,500,000 VNĐ</option>
+                                                                    <option value="">6,000,000 VNĐ</option>
+                                                                    <option value="">Số tiền khác</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md d-flex">
+                                                    <div class="form-group d-flex w-100 border-0">
+                                                        <div class="form-field w-100 align-items-center d-flex">
+                                                            <input type="submit" value="Tìm kiếm"
+                                                                   class="align-self-stretch form-control btn btn-primary">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="v-pills-2" role="tabpanel"
+                                         aria-labelledby="v-pills-performance-tab">
+                                        <form action="#" class="search-property-1">
+                                            <div class="row no-gutters">
+                                                <div class="col-lg d-flex">
+                                                    <div class="form-group p-4 border-0">
+                                                        <label for="#">Địa Điểm</label>
+                                                        <div class="form-field">
+                                                            <div class="icon"><span class="fa fa-search"></span></div>
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Tìm Khách sạn">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg d-flex">
+                                                    <div class="form-group p-4">
+                                                        <label for="#">Thời gian Check-in</label>
+                                                        <div class="form-field">
+                                                            <div class="icon"><span class="fa fa-calendar"></span></div>
+                                                            <input type="text" class="form-control checkin_date"
+                                                                   placeholder="Ngày Check-In">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg d-flex">
+                                                    <div class="form-group p-4">
+                                                        <label for="">Thời gian Check-out</label>
+                                                        <div class="form-field">
+                                                            <div class="icon"><span class="fa fa-calendar"></span></div>
+                                                            <input type="text" class="form-control checkout_date"
+                                                                   placeholder="Ngày Check-Out">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg d-flex">
+                                                    <div class="form-group p-4">
+                                                        <label for="#">Giới hạn Giá</label>
+                                                        <div class="form-field">
+                                                            <div class="select-wrap">
+                                                                <div class="icon"><span class="fa fa-chevron-down"></span>
+                                                                </div>
+                                                                <select name=""  class="form-control">
+                                                                    <option value="">500,000 VNĐ</option>
+                                                                    <option value="">1,000,000 VNĐ</option>
+                                                                    <option value="">1,500,000 VNĐ</option>
+                                                                    <option value="">2,000,000 VNĐ</option>
+                                                                    <option value="">2,500,000 VNĐ</option>
+                                                                    <option value="">3,500,000 VNĐ</option>
+                                                                    <option value="">4,500,000 VNĐ</option>
+                                                                    <option value="">5,000,000 VNĐ</option>
+                                                                    <option value="">5,500,000 VNĐ</option>
+                                                                    <option value="">6,000,000 VNĐ</option>
+                                                                    <option value="">Số tiền khác</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg d-flex">
+                                                    <div class="form-group d-flex w-100 border-0">
+                                                        <div class="form-field w-100 align-items-center d-flex">
+                                                            <input type="submit" value="Tìm kiếm"
+                                                                   class="align-self-stretch form-control btn btn-primary p-0">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Service End -->
+    </section>
 
-
-    <!-- Destination Start -->
-    <div class="container-xxl py-5 destination">
+    <section class="ftco-section services-section">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
-                <h1 class="mb-5">Popular Destination</h1>
-            </div>
-            <div class="row g-3">
-                <div class="col-lg-7 col-md-6">
-                    <div class="row g-3">
-                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="../static/img/destination-1.jpg" alt="">
-                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
-                                    30%
-                                    OFF
+            <div class="row d-flex">
+                <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
+                    <div class="w-100">
+                        <span class="subheading">Chào mừng đến với Du lịch Đó đây</span>
+                        <h2 class="mb-4">Đã đến lúc bắt đầu cuộc hành trình của bạn</h2>
+                        <p>Biển Đà Nẵng, với vẻ đẹp hoang sơ và cuốn hút, luôn là điểm đến lý tưởng cho những người yêu
+                            thích du lịch biển. Vùng biển này nằm giữa những dãy núi đá vôi đổ bộ xuống biển, tạo nên khung
+                            cảnh hùng vĩ và độc đáo. Những bãi biển trải dài, với cát trắng mịn và nước biển trong xanh, thu
+                            hút du khách đến đây để thả mình trong làn nước biển mát lạnh.</p>
+                        <p>Không chỉ có cảnh đẹp tự nhiên, Đà Nẵng còn có nhiều điểm du lịch thú vị khác như Cầu Rồng lung
+                            linh về đêm, Bà Nà Hills với khí hậu mát mẻ và các công trình kiến trúc độc đáo, hay Khu du lịch
+                            Sơn Trà với ngọn núi cao và lớp rừng nhiệt đới nguyên sơ.</p>
+                        <p><a href="#" class="btn btn-primary py-3 px-4">Tìm kiếm Điểm đến</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+                            <div class="services services-1 color-1 d-block img"
+                                 style="background-image: url(/assets/images/services-1.jpg);">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="flaticon-paragliding"></span></div>
+                                <div class="media-body">
+                                    <h3 class="heading mb-3">Những hoạt động</h3>
+                                    <p>tham quan, thưởng thức ẩm thực địa phương, thể thao, mua sắm và tận hưởng văn hóa địa
+                                        phương</p>
                                 </div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                                    Thailand
-                                </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="../static/img/destination-2.jpg" alt="">
-                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
-                                    25%
-                                    OFF
+                        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+                            <div class="services services-1 color-2 d-block img"
+                                 style="background-image: url(/assets/images/services-2.jpg);">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="flaticon-route"></span></div>
+                                <div class="media-body">
+                                    <h3 class="heading mb-3">Sắp xếp chuyến đi</h3>
+                                    <p>tổ chức và điều phối các địa điểm và tiện ích cho chương trình du lịch</p>
                                 </div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                                    Malaysia
-                                </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="../static/img/destination-3.jpg" alt="">
-                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
-                                    35%
-                                    OFF
+                        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+                            <div class="services services-1 color-3 d-block img"
+                                 style="background-image: url(/assets/images/services-3.jpg);">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="flaticon-tour-guide"></span></div>
+                                <div class="media-body">
+                                    <h3 class="heading mb-3">Hướng dẫn viên tư nhân</h3>
+                                    <p>người bạn đồng hành tận tâm mang đến trải nghiệm du lịch cá nhân hóa và độc đáo.</p>
                                 </div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                                    Australia
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+                            <div class="services services-1 color-4 d-block img"
+                                 style="background-image: url(/assets/images/services-4.jpg);">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="flaticon-map"></span></div>
+                                <div class="media-body">
+                                    <h3 class="heading mb-3">Quản lý địa diểm du lịch</h3>
+                                    <p>là chuyên gia xác định và điều phối các địa điểm và vị trí trong các chương trình du
+                                        lịch</p>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="../static/img/destination-4.jpg"
-                             alt=""
-                             style="object-fit: cover;">
-                        <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% OFF
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section img ftco-select-destination" style="background-image: url(/assets/images/bg_3.jpg);">
+        <div class="container">
+            <div class="row justify-content-center pb-4">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <span class="subheading">Những địa điểm Đó Đây cung cấp</span>
+                    <h2 class="mb-4">Chọn điểm đến của bạn</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container container-2">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel-destination owl-carousel ftco-animate">
+                        <div class="item">
+                            <div class="project-destination">
+                                <a href="#" class="img" style="background-image: url(/assets/images/place-1.jpg);">
+                                    <div class="text">
+                                        <h3>Philippines</h3>
+                                        <span>8 Tours</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
-                            Indonesia
+                        <div class="item">
+                            <div class="project-destination">
+                                <a href="#" class="img" style="background-image: url(/assets/images/place-2.jpg);">
+                                    <div class="text">
+                                        <h3>Canada</h3>
+                                        <span>2 Tours</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a href="#" class="img" style="background-image: url(/assets/images/place-3.jpg);">
+                                    <div class="text">
+                                        <h3>Thailand</h3>
+                                        <span>5 Tours</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a href="#" class="img" style="background-image: url(/assets/images/place-4.jpg);">
+                                    <div class="text">
+                                        <h3>Autralia</h3>
+                                        <span>5 Tours</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a href="#" class="img" style="background-image: url(/assets/images/place-5.jpg);">
+                                    <div class="text">
+                                        <h3>Greece</h3>
+                                        <span>7 Tours</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center pb-4">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <span class="subheading">Điểm đến</span>
+                    <h2 class="mb-4">Địa điểm du lịch</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="#" class="img" style="background-image: url(/assets/images/destination-1.jpg);">
+                            <span class="price">7tr VNĐ/Người</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">8 Ngày</span>
+                            <h3><a href="#">Banaue Rice Terraces</a></h3>
+                            <p class="location"><span class="fa fa-map-marker"></span> Banaue, Ifugao, Philippines</p>
+                            <ul>
+                                <li><span class="flaticon-shower"></span>2</li>
+                                <li><span class="flaticon-king-size"></span>3</li>
+                                <li><span class="flaticon-mountains"></span>Gần núi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="#" class="img" style="background-image: url(/assets/images/destination-2.jpg);">
+                            <span class="price">6tr5 VNĐ/Người</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">10 ngày</span>
+                            <h3><a href="#">Banaue Rice Terraces</a></h3>
+                            <p class="location"><span class="fa fa-map-marker"></span> Banaue, Ifugao, Philippines</p>
+                            <ul>
+                                <li><span class="flaticon-shower"></span>2</li>
+                                <li><span class="flaticon-king-size"></span>3</li>
+                                <li><span class="flaticon-sun-umbrella"></span>Gần biển</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="#" class="img" style="background-image: url(/assets/images/destination-3.jpg);">
+                            <span class="price">6tr VNĐ/Người</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">7 ngày</span>
+                            <h3><a href="#">Banaue Rice Terraces</a></h3>
+                            <p class="location"><span class="fa fa-map-marker"></span> Banaue, Ifugao, Philippines</p>
+                            <ul>
+                                <li><span class="flaticon-shower"></span>2</li>
+                                <li><span class="flaticon-king-size"></span>3</li>
+                                <li><span class="flaticon-mountains"></span>Trung tâm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="#" class="img" style="background-image: url(/assets/images/destination-4.jpg);">
+                            <span class="price">6tr5 VNĐ/Người</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">8 ngày</span>
+                            <h3><a href="#">Banaue Rice Terraces</a></h3>
+                            <p class="location"><span class="fa fa-map-marker"></span> Banaue, Ifugao, Philippines</p>
+                            <ul>
+                                <li><span class="flaticon-shower"></span>2</li>
+                                <li><span class="flaticon-king-size"></span>3</li>
+                                <li><span class="flaticon-sun-umbrella"></span>Gần biển</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="#" class="img" style="background-image: url(/assets/images/destination-5.jpg);">
+                            <span class="price">7tr VNĐ/Người</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">10 ngày</span>
+                            <h3><a href="#">Banaue Rice Terraces</a></h3>
+                            <p class="location"><span class="fa fa-map-marker"></span> Banaue, Ifugao, Philippines</p>
+                            <ul>
+                                <li><span class="flaticon-shower"></span>2</li>
+                                <li><span class="flaticon-king-size"></span>3</li>
+                                <li><span class="flaticon-mountains"></span>Gần núi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="#" class="img" style="background-image: url(/assets/images/destination-6.jpg);">
+                            <span class="price">8tr VNĐ/Người</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">7 ngày</span>
+                            <h3><a href="#">Banaue Rice Terraces</a></h3>
+                            <p class="location"><span class="fa fa-map-marker"></span> Banaue, Ifugao, Philippines</p>
+                            <ul>
+                                <li><span class="flaticon-shower"></span>2</li>
+                                <li><span class="flaticon-king-size"></span>3</li>
+                                <li><span class="flaticon-sun-umbrella"></span>Gần biển</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-about img" style="background-image: url(/assets/images/bg_4.jpg);">
+        <div class="overlay"></div>
+        <div class="container py-md-5">
+            <div class="row py-md-5">
+                <div class="col-md d-flex align-items-center justify-content-center">
+                    <a href="https://vimeo.com/45830194"
+                       class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+                        <span class="fa fa-play"></span>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Destination Start -->
+    </section>
 
-
-    <!-- Package Start -->
-    <div class="container-xxl py-5">
+    <section class="ftco-section ftco-about ftco-no-pt img">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Packages</h6>
-                <h1 class="mb-5">Awesome Packages</h1>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="package-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="../static/img/package-1.jpg" alt="">
-                        </div>
-                        <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-map-marker-alt text-primary me-2"></i>Thailand</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2
-                                Person</small>
-                        </div>
-                        <div class="text-center p-4">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
-                            <div class="d-flex justify-content-center mb-2">
-                                <a href="#" class="btn btn-sm btn-primary px-3 border-end"
-                                   style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book
-                                    Now</a>
+            <div class="row d-flex">
+                <div class="col-md-12 about-intro">
+                    <div class="row">
+                        <div class="col-md-6 d-flex align-items-stretch">
+                            <div class="img d-flex w-100 align-items-center justify-content-center"
+                                 style="background-image:url(/assets/images/about-1.jpg);">
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="package-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="../static/img/package-2.jpg" alt="">
-                        </div>
-                        <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-map-marker-alt text-primary me-2"></i>Indonesia</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2
-                                Person</small>
-                        </div>
-                        <div class="text-center p-4">
-                            <h3 class="mb-0">$139.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
-                            <div class="d-flex justify-content-center mb-2">
-                                <a href="#" class="btn btn-sm btn-primary px-3 border-end"
-                                   style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book
-                                    Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="package-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="../static/img/package-3.jpg" alt="">
-                        </div>
-                        <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-map-marker-alt text-primary me-2"></i>Malaysia</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2
-                                Person</small>
-                        </div>
-                        <div class="text-center p-4">
-                            <h3 class="mb-0">$189.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
-                            <div class="d-flex justify-content-center mb-2">
-                                <a href="#" class="btn btn-sm btn-primary px-3 border-end"
-                                   style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book
-                                    Now</a>
+                        <div class="col-md-6 pl-md-5 py-5">
+                            <div class="row justify-content-start pb-3">
+                                <div class="col-md-12 heading-section ftco-animate">
+                                    <span class="subheading">Về chúng tôi</span>
+                                    <h2 class="mb-4">Làm cho chuyến đi của bạn trở lên đáng nhớ và an toàn cùng chúng
+                                        tôi</h2>
+                                    <p>Đây là nơi bạn có thể khám phá tâm hồn và đam mê của đội ngũ chúng tôi, cũng như cam
+                                        kết của chúng tôi về việc mang đến cho du khách những chuyến đi đặc biệt.</p>
+                                    <p><a href="#" class="btn btn-primary">Đặt Tour của bạn</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Package End -->
+    </section>
 
-
-    <!-- Booking Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <section class="ftco-section testimony-section bg-bottom" style="background-image: url(/assets/images/bg_1.jpg);">
+        <div class="overlay"></div>
         <div class="container">
-            <div class="booking p-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-md-6 text-white">
-                        <h6 class="text-white text-uppercase">Booking</h6>
-                        <h1 class="text-white mb-4">Online Booking</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
-                            diam et
-                            eos. Clita erat ipsum et lorem et sit.</p>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
-                            diam et
-                            eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat
-                            amet</p>
-                        <a class="btn btn-outline-light py-3 px-5 mt-2" href="">Read More</a>
-                    </div>
-                    <div class="col-md-6">
-                        <h1 class="text-white mb-4">Book A Tour</h1>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="name"
-                                               placeholder="Your Name">
-                                        <label for="name">Your Name</label>
+            <div class="row justify-content-center pb-4">
+                <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                    <span class="subheading">Lời chứng thực</span>
+                    <h2 class="mb-4">Đóng góp của du khách</h2>
+                </div>
+            </div>
+            <div class="row ftco-animate">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel">
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">Chuyến du lịch này thật tuyệt vời! Tôi đã có cơ hội khám phá những địa
+                                        điểm tuyệt đẹp và tìm hiểu văn hóa địa phương.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Chuyên gia Nghia</p>
+                                            <span class="position">Front-End Dev</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control bg-transparent" id="email"
-                                               placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent datetimepicker-input"
-                                               id="datetime" placeholder="Date & Time" data-target="#date3"
-                                               data-toggle="datetimepicker"/>
-                                        <label for="datetime">Date & Time</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select class="form-select bg-transparent" id="select1">
-                                            <option value="1">Destination 1</option>
-                                            <option value="2">Destination 2</option>
-                                            <option value="3">Destination 3</option>
-                                        </select>
-                                        <label for="select1">Destination</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                    <textarea class="form-control bg-transparent" placeholder="Special Request"
-                                              id="message" style="height: 100px"></textarea>
-                                        <label for="message">Special Request</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-outline-light w-100 py-3" type="submit">Book Now</button>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">Dịch vụ và hướng dẫn viên rất xuất sắc, mang lại cho chúng tôi một kỳ
+                                        nghỉ đáng nhớ và thú vị. Nhất định sẽ quay trở lại!</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Phong PC</p>
+                                            <span class="position">Back-End Dev</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">Mọi thứ đều rất tuyệt vời, từ thời tiết nắng đẹp, bãi biển trong xanh,
+                                        đến các món ăn ngon và dịch vụ chu đáo. Quá đỉnh!</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Mạnh Thin</p>
+                                            <span class="position">Chuyên gia BA</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">Chuyến du lịch này đã vượt qua mọi kỳ vọng của tôi! Cảm ơn sự tận tâm
+                                        của hướng dẫn viên và nhân viên chỗ ở.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Thu Hà</p>
+                                            <span class="position">Database Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">Tôi đã thu thập nhiều kỷ niệm đẹp và bạn nhân không thể tốt hơn. Chắc
+                                        chắn tôi sẽ quay trở lại và khám phá nhiều hơn.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Nam rổ</p>
+                                            <span class="position">Tester</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Booking Start -->
+    </section>
 
 
-    <!-- Process Start -->
-    <div class="container-xxl py-5">
+    <section class="ftco-section">
         <div class="container">
-            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Process</h6>
-                <h1 class="mb-5">3 Easy Steps</h1>
-            </div>
-            <div class="row gy-5 gx-4 justify-content-center">
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
-                             style="width: 100px; height: 100px;">
-                            <i class="fa fa-globe fa-3x text-white"></i>
-                        </div>
-                        <h5 class="mt-4">Choose A Destination</h5>
-                        <hr class="w-25 mx-auto bg-primary mb-1">
-                        <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum
-                            et
-                            lorem et sit sed stet lorem sit</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
-                             style="width: 100px; height: 100px;">
-                            <i class="fa fa-dollar-sign fa-3x text-white"></i>
-                        </div>
-                        <h5 class="mt-4">Pay Online</h5>
-                        <hr class="w-25 mx-auto bg-primary mb-1">
-                        <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum
-                            et
-                            lorem et sit sed stet lorem sit</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
-                             style="width: 100px; height: 100px;">
-                            <i class="fa fa-plane fa-3x text-white"></i>
-                        </div>
-                        <h5 class="mt-4">Fly Today</h5>
-                        <hr class="w-25 mx-auto bg-primary mb-1">
-                        <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum
-                            et
-                            lorem et sit sed stet lorem sit</p>
-                    </div>
+            <div class="row justify-content-center pb-4">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <span class="subheading">Bài viết của chúng tôi</span>
+                    <h2 class="mb-4">Những bài đăng gần đây</h2>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Process Start -->
-
-
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Travel Guide</h6>
-                <h1 class="mb-5">Meet Our Guide</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="../static/img/team-1.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
+            <div class="row d-flex">
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+                        </a>
+                        <div class="text">
+                            <div class="d-flex align-items-center mb-4 topp">
+                                <div class="one">
+                                    <span class="day">16</span>
+                                </div>
+                                <div class="two">
+                                    <span class="yr">2023</span>
+                                    <span class="mos">Tháng Năm</span>
+                                </div>
+                            </div>
+                            <h3 class="heading"><a href="#">Địa điểm nổi tiếng nhất trên thế giới</a></h3>
+                            <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+                            <p><a href="#" class="btn btn-primary">Đọc tiếp</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="../static/img/team-2.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="../static/img/team-3.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+                        </a>
+                        <div class="text">
+                            <div class="d-flex align-items-center mb-4 topp">
+                                <div class="one">
+                                    <span class="day">12</span>
+                                </div>
+                                <div class="two">
+                                    <span class="yr">2023</span>
+                                    <span class="mos">Tháng Chín</span>
+                                </div>
+                            </div>
+                            <h3 class="heading"><a href="#">Những địa điểm đẹp nhất trên thế giới</a></h3>
+                            <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+                            <p><a href="#" class="btn btn-primary">Đọc tiếp</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="../static/img/team-4.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+                        </a>
+                        <div class="text">
+                            <div class="d-flex align-items-center mb-4 topp">
+                                <div class="one">
+                                    <span class="day">15</span>
+                                </div>
+                                <div class="two">
+                                    <span class="yr">2023</span>
+                                    <span class="mos">Tháng Chín</span>
+                                </div>
+                            </div>
+                            <h3 class="heading"><a href="#">Địa điểm mới được khám phá tại VietNam</a></h3>
+                            <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+                            <p><a href="#" class="btn btn-primary">Đọc tiếp</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="text-center">
-                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-                <h1 class="mb-5">Our Clients Say!!!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item bg-white text-center border p-4">
-                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="../static/img/testimonial-1.jpg"
-                         style="width: 80px; height: 80px;" alt="">
-                    <h5 class="mb-0">John Doe</h5>
-                    <p>New York, USA</p>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita
-                        erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-white text-center border p-4">
-                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="../static/img/testimonial-2.jpg"
-                         style="width: 80px; height: 80px;" alt="">
-                    <h5 class="mb-0">John Doe</h5>
-                    <p>New York, USA</p>
-                    <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                        eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-white text-center border p-4">
-                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="../static/img/testimonial-3.jpg"
-                         style="width: 80px; height: 80px;" alt="">
-                    <h5 class="mb-0">John Doe</h5>
-                    <p>New York, USA</p>
-                    <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                        eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item bg-white text-center border p-4">
-                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="../static/img/testimonial-4.jpg"
-                         style="width: 80px; height: 80px;" alt="">
-                    <h5 class="mb-0">John Doe</h5>
-                    <p>New York, USA</p>
-                    <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                        eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
+    </section>
 
 </div>
-
-
