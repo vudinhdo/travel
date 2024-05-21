@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
@@ -97,11 +98,11 @@ public class TourController {
     //CLIENT
 
     @GetMapping("/destination")
-    public String packageFile(Model model){
+    public String packageFile(Model model) {
         List<Tours> tours = tourService.getAllTour();
         List<Cities> cities = cityService.getAllCity();
         List<TourDTO> tourDTOS = new ArrayList<>();
-        tours.forEach(obj->{
+        tours.forEach(obj -> {
             TourDTO tourDTO = new TourDTO();
             tourDTO.setId(obj.getId());
             tourDTO.setNameTour(obj.getNameTour());
@@ -111,20 +112,22 @@ public class TourController {
             tourDTO.setStartDate(obj.getStartDate());
             tourDTO.setEndDate(obj.getEndDate());
             tourDTO.setPriceTour(obj.getPriceTour());
-            if(obj.getCities() != null){
+            if (obj.getCities() != null) {
                 tourDTO.setCity_id(obj.getCities().getId());
             }
             tourDTOS.add(tourDTO);
         });
-        model.addAttribute("tours" , tourDTOS);
-        model.addAttribute("cities" , cities);
-        model.addAttribute("page" , "destination");
+        model.addAttribute("tours", tourDTOS);
+        model.addAttribute("cities", cities);
+        model.addAttribute("page", "destination");
         return "layout";
     }
 
-    @GetMapping("destination-detail")
-    public String getDetailTour(Model model){
-        model.addAttribute("page","destination-detail");
+    @GetMapping("/destination-detail/{id}")
+    public String getDetailTour(Model model, @PathVariable(name = "id") Integer idTour) {
+        Tours tours = tourService.findTourById(idTour);
+        model.addAttribute("tour", tours);
+        model.addAttribute("page", "destination-detail");
         return "layout";
     }
 }

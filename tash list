@@ -1,0 +1,15 @@
+[33me57e4c8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster-new-02[m[33m, [m[1;31morigin/master-new-02[m[33m, [m[1;31morigin/master-new[m[33m)[m HEAD@{0}: reset: moving to HEAD
+[33me57e4c8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster-new-02[m[33m, [m[1;31morigin/master-new-02[m[33m, [m[1;31morigin/master-new[m[33m)[m HEAD@{1}: reset: moving to HEAD
+[33me57e4c8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster-new-02[m[33m, [m[1;31morigin/master-new-02[m[33m, [m[1;31morigin/master-new[m[33m)[m HEAD@{2}: checkout: moving from master-new to master-new-02
+[33m3e44e96[m[33m ([m[1;32mmaster-new[m[33m)[m HEAD@{3}: commit (amend): update booking
+[33me57e4c8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster-new-02[m[33m, [m[1;31morigin/master-new-02[m[33m, [m[1;31morigin/master-new[m[33m)[m HEAD@{4}: checkout: moving from master-new-02 to master-new
+[33me57e4c8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster-new-02[m[33m, [m[1;31morigin/master-new-02[m[33m, [m[1;31morigin/master-new[m[33m)[m HEAD@{5}: checkout: moving from master-new to master-new-02
+[33me57e4c8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster-new-02[m[33m, [m[1;31morigin/master-new-02[m[33m, [m[1;31morigin/master-new[m[33m)[m HEAD@{6}: commit: update temp
+[33m1db07eb[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{7}: checkout: moving from master to master-new
+[33m1db07eb[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{8}: commit: update admin AccountService AccountServiceIMPL ConfigSecurity AdminController admin-account-add.html admin-account-table.html
+[33m0d85f48[m[33m ([m[1;31morigin/update[m[33m, [m[1;32mupdate[m[33m)[m HEAD@{9}: checkout: moving from update to master
+[33m0d85f48[m[33m ([m[1;31morigin/update[m[33m, [m[1;32mupdate[m[33m)[m HEAD@{10}: checkout: moving from update to update
+[33m0d85f48[m[33m ([m[1;31morigin/update[m[33m, [m[1;32mupdate[m[33m)[m HEAD@{11}: branch: Reset to origin/update
+[33m0d85f48[m[33m ([m[1;31morigin/update[m[33m, [m[1;32mupdate[m[33m)[m HEAD@{12}: checkout: moving from master to update
+[33m0d85f48[m[33m ([m[1;31morigin/update[m[33m, [m[1;32mupdate[m[33m)[m HEAD@{13}: commit: update admin template
+[33m29f618d[m HEAD@{14}: commit (initial): Initial commit

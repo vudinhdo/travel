@@ -1,0 +1,73 @@
+<div th:fragment="BookingPage">
+
+
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/assets/images/bg_1.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+                <div class="col-md-9 ftco-animate pb-5 text-center">
+                    <h1 class="mb-0 bread">Liên hệ Chúng tôi</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb contact-section mb-4">
+        <div class="container">
+            <div class=" d-flex contact-info">
+                <div class="card mb-3 w-100 shadow-lg p-3 mb-5 bg-white rounded" >
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img th:src="${'/assets/images/tours/'+tour.imageTourOne}" alt="..." class="img w-100" style="height: 25em; object-fit: cover;object-position: 50% 50%;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-primary">
+                                <h3 class="card-title" th:text="${tour.nameTour}">Card title</h3>
+
+                                <p class="card-text" th:text="${'Ngày khởi hành: '} + ${tour.startDate}">1</p>
+                                <p class="card-text" th:text="${'Ngày kết thúc: '} + ${ tour.endDate}">2</p>
+                                <p class="card-text" th:text="${'Giá : '} + ${tour.priceTour} + ${'vnd/người'}">3</p>
+                                <p class="card-text">4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pt">
+        <div class="container">
+            <div class=" block-9">
+                <div >
+                    <h2 class="text-primary">Tổng quan về chuyến đi</h2>
+                    <h4 class="text-primary">Thông tin liên lạc</h4>
+                </div>
+                <div class=" order-md-last d-flex ">
+                    <form action="#" class="bg-light p-5 contact-form w-100">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Họ và tên">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" maxlength="10" placeholder="Số điện thoại">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Địa chỉ">
+                        </div>
+                        <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="7" class="form-control"
+                                  placeholder="Lời nhắn"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi Lời nhắn" class="btn btn-primary py-3 px-5">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>

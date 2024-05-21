@@ -6,6 +6,7 @@ import lombok.Data;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.util.List;
 
 @Entity
 @Data
@@ -27,6 +28,9 @@ public class Tours {
     @ManyToOne
     @JoinColumn(name = "city_id")
     private Cities cities;
+
+    @OneToMany(mappedBy = "tours")
+    private List<Booking> booking;
 
 
 

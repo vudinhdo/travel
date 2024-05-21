@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalTime;
+import java.util.List;
 
 @Entity
 @Data
@@ -19,4 +20,6 @@ public class Accounts {
     private String phoneNumber;
     private LocalTime timeCreate;
     private LocalTime timeUpdate;
+    @OneToMany(mappedBy = "accounts")
+    private List<Booking> bookings;
 }

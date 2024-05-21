@@ -8,4 +8,8 @@ public interface TourServiceIMPL {
     List<Tours> getAllTour();
 
     Tours saveTour(Tours saveTour);
+
+    Tours findTourById(int idTour);
+
+
 }
