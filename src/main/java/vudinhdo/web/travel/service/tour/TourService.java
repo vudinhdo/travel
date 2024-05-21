@@ -6,6 +6,7 @@ import vudinhdo.web.travel.model.Tours;
 import vudinhdo.web.travel.repository.TourRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TourService implements TourServiceIMPL {
@@ -27,5 +28,15 @@ public class TourService implements TourServiceIMPL {
     @Override
     public Tours saveTour(Tours saveTour) {
         return tourRepository.save(saveTour);
+    }
+
+    /**
+     * @param idTour
+     * @return
+     */
+    @Override
+    public Tours findTourById(int idTour) {
+        Optional<Tours> toursOptional = tourRepository.findById(idTour);
+        return  toursOptional.orElse(null);
     }
 }

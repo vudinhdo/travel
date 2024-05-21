@@ -94,13 +94,13 @@
             <div class="row" th:each="i:${tours}">
                 <div class="col-md-4 ftco-animate">
                     <div class="project-wrap">
-                        <a href="#" class="img"
+                        <a th:href="${'/destination-detail/'+i.id}" class="img"
                            th:style="'background-image: url(/assets/images/tours/'+${i.imageTourOne}+')'">
                             <span class="price" th:text="${i.priceTour+ ' VNĐ/Người'}"></span>
                         </a>
                         <div class="text p-4">
                             <span class="days">8 Ngày</span>
-                            <h3><a href="/destination-detail" class="d-inline-block text-truncate w-100" th:text="${i.nameTour}">Banaue
+                            <h3><a th:href="${'/destination-detail/'+i.id}" class="d-inline-block text-truncate w-100" th:text="${i.nameTour}">Banaue
                                 Rice Terraces</a></h3>
                             <p class="location"><span class="fa fa-map-marker"></span> <span th:each="j:${cities}"
                                                                                              th:if="${j.id == i.city_id}"

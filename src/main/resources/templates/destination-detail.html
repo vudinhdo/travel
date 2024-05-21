@@ -6,11 +6,7 @@
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
                 <div class="col-md-9 ftco-animate pb-5 text-center">
-                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Trang chủ <i
-                            class="fa fa-chevron-right"></i></a></span> <span class="mr-2"><a href="index.html">Bài viết <i
-                            class="fa fa-chevron-right"></i></a></span> <span>Chi tiết Bài viết <i
-                            class="fa fa-chevron-right"></i></span></p>
-                    <h1 class="mb-0 bread">Bài viết của Nghia</h1>
+                    <h1 class="mb-0 bread">Chi tiết Tour</h1>
                 </div>
             </div>
         </div>
@@ -18,157 +14,29 @@
 
     <section class="ftco-section ftco-no-pt ftco-no-pb">
         <div class="container">
-                <div class=" ftco-animate py-md-5 mt-md-5">
-                    <h2 class="mb-3">Sapa - Hành Trình Khám Phá Vùng Đất Mộc Mạc Vùng Cao</h2>
-                    <p>Nằm tại vùng biên giới phía bắc của Việt Nam, Sapa là một thiên đàng du lịch với cảnh quan núi non
-                        hùng vĩ, đồng bằng lúa mạch xanh mướt và văn hóa dân tộc sắc nét. Những dãy núi sương mù, cánh đồng
-                        bậc thang hùng vĩ, và bản làng dân tộc độc đáo đã tạo nên một điểm đến lý tưởng cho những ai muốn
-                        tìm hiểu về vẻ đẹp tự nhiên và văn hóa đa dạng của Việt Nam.</p>
-                    <p>
-                        <img src="/assets/images/bg_5.jpg" alt="" class="img-fluid">
-                    </p>
-                    <p>Trải nghiệm du lịch Sapa bao gồm việc thám hiểm các con đường trekking đầy thách thức, thưởng thức
-                        đặc sản ẩm thực dân tộc, và tương tác với người dân địa phương thân thiện. Sapa không chỉ là một
-                        hành trình du lịch, mà còn là một cuộc phiêu lưu đáng nhớ giữa thiên nhiên hùng vĩ và văn hóa sâu
-                        sắc.</p>
-                    <h2 class="mb-3 mt-5">Đà Nẵng - Hành Trình Khám Phá Bờ Biển Tươi Đẹp và Di Sản Văn Hóa</h2>
-                    <p>Đà Nẵng, một thành phố nằm ở vùng trung bộ của Việt Nam, nổi bật với vẻ đẹp của bãi biển tuyệt đẹp,
-                        di sản văn hóa đa dạng và sự hòa quyện giữa hiện đại và truyền thống. Thành phố này đã trở thành một
-                        trong những điểm đến du lịch hàng đầu tại Đông Nam Á, thu hút du khách từ khắp nơi trên thế
-                        giới.</p>
-                    <p>
-                        <img src="/assets/images/bg_1.jpg" alt="" class="img-fluid">
-                    </p>
-                    <p>Dưới sự hướng dẫn của những người dân thân thiện và hiếu khách, Du lịch Đà Nẵng không chỉ là việc
-                        khám phá cảnh đẹp và văn hóa độc đáo mà còn là một trải nghiệm tận hưởng sự hòa quyện giữa thiên
-                        nhiên và con người. Đà Nẵng đang chờ đón bạn với những kỷ niệm đáng nhớ và những trải nghiệm du lịch
-                        đa dạng.</p>
-                    <div class="tag-widget post-tag-container mb-5 mt-5">
-                        <div class="tagcloud">
-                            <a href="#" class="tag-cloud-link">Đời sống</a>
-                            <a href="#" class="tag-cloud-link">Du lịch</a>
-                            <a href="#" class="tag-cloud-link">Khám phá</a>
-                            <a href="#" class="tag-cloud-link">Trải nghiệm</a>
-                        </div>
+            <div class=" ftco-animate py-md-5 mt-md-5">
+                <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="col-lg-8 ftco-animate py-md-5 mt-md-5 ">
+                        <small th:text="${tour.tourCode}">abcd</small>
+                        <h2 th:text="${tour.nameTour}">Sapa - Hành Trình Khám Phá Vùng Đất Mộc Mạc Vùng Cao</h2>
                     </div>
-
-                    <div class="about-author d-flex p-4 bg-light">
-                        <div class="bio mr-5">
-                            <img src="/assets/images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
-                        </div>
-                        <div class="desc">
-                            <h3>Nghia Ngo</h3>
-                            <p>Một học sinh Đại học chuyên ngành Công Nghệ Thông tin, với sở thích là xem phim, chơi game và
-                                nghe nhạc. Bên cạnh đó ngủ rất nhiều và thường nằm dài cả ngày. Không thích đi thang máy mặc
-                                dù nhiều hôm phòng học ở tầng 9 nhưng vẫn quyết định leo bộ. :V</p>
-                        </div>
+                    <div class="col-lg-4 sidebar ftco-animate py-md-5 mt-5">
+                        <p><a th:href=" ${tour.id} + ${'/booking'}" class="btn btn-primary py-3 px-4 w-100">Đặt ngay</a></p>
+                        <p><a href="#" class="btn btn-primary py-3 px-4 w-100">Bạn cần giúp đỡ?</a></p>
                     </div>
+                </div>
+                <p>
+                    <img th:src="${'/assets/images/tours/'+tour.imageTourOne}" alt="" class="img-fluid w-100">
+                </p>
 
+                <div class="container mt-5 text-primary shadow-lg p-3 mb-5 bg-white rounded">
+                    <p th:text="${'Ngày khởi hành: '} + ${tour.startDate}">1</p>
+                    <p th:text="${'Ngày kết thúc: '} + ${ tour.endDate}">2</p>
+                    <p th:text="${'Giá : '} + ${tour.priceTour} + ${'vnd/người'}">3</p>
+                    <p>4</p>
+                </div>
 
-                    <div class="pt-5 mt-5">
-                        <h3 class="mb-5" style="font-size: 20px; font-weight: bold;">6 Bình luận</h3>
-                        <ul class="comment-list">
-                            <li class="comment">
-                                <div class="vcard bio">
-                                    <img src="/assets/images/person_1.jpg" alt="Image placeholder">
-                                </div>
-                                <div class="comment-body">
-                                    <h3>Phong PC</h3>
-                                    <div class="meta">Tháng Chín 11, 2023 vào lúc 2:21pm</div>
-                                    <p>Thế giới hình tròn sao mà nó lại tròn thế nhỉ? Điều này thật là kỳ diệu! 😄🌍</p>
-                                    <p><a href="#" class="reply">Trả lời Bình luận</a></p>
-                                </div>
-                            </li>
-
-                            <li class="comment">
-                                <div class="vcard bio">
-                                    <img src="/assets/images/person_1.jpg" alt="Image placeholder">
-                                </div>
-                                <div class="comment-body">
-                                    <h3>Mạnh Thin</h3>
-                                    <div class="meta">Tháng Chín 12, 2023 vào lúc 2:25pm</div>
-                                    <p>Cái gì cũng có thể xảy ra, ví dụ như hôm qua tôi đã nghịch ngợm bật đèn lên và tắt nó
-                                        bằng cách ấn vào nút cắm điện! 💡😂</p>
-                                    <p><a href="#" class="reply">Trả lời Bình luận</a></p>
-                                </div>
-
-                                <ul class="children">
-                                    <li class="comment">
-                                        <div class="vcard bio">
-                                            <img src="/assets/images/person_1.jpg" alt="Image placeholder">
-                                        </div>
-                                        <div class="comment-body">
-                                            <h3>Thu Hà</h3>
-                                            <div class="meta">Tháng Chín 12, 2023 vào lúc 2:27pm</div>
-                                            <p>Nghe nói nước mưa là nước mưa, nhưng tôi nghĩ nước mưa là nước mưa mưa.
-                                                ☔😄</p>
-                                            <p><a href="#" class="reply">Trả lời Bình luận</a></p>
-                                        </div>
-
-
-                                        <ul class="children">
-                                            <li class="comment">
-                                                <div class="vcard bio">
-                                                    <img src="/assets/images/person_1.jpg" alt="Image placeholder">
-                                                </div>
-                                                <div class="comment-body">
-                                                    <h3>Nam Rổ</h3>
-                                                    <div class="meta">Tháng Chín 12, 2023 vào lúc 2:29pm</div>
-                                                    <p>Tôi nghĩ rằng mất trí nhớ là điều tốt. Mỗi buổi sáng thức dậy, bạn có
-                                                        thể tự mình quyết định liệu mình có làm việc hay nghỉ ngơi vào hôm
-                                                        đó. Tuyệt vời đúng không? 😄🤔</p>
-                                                    <p><a href="#" class="reply">Trả lời Bình luận</a></p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="comment">
-                                <div class="vcard bio">
-                                    <img src="/assets/images/person_1.jpg" alt="Image placeholder">
-                                </div>
-                                <div class="comment-body">
-                                    <h3>Nghia Ngo</h3>
-                                    <div class="meta">Tháng Chínn 12, 2023 vào lúc 2:35pm</div>
-                                    <p>Tôi đã thử bắt ánh sáng vào lọ và giữ lại nó. Bây giờ, tôi có một đèn bắt sáng trong
-                                        tay, và không biết làm gì tiếp theo! 💡😅</p>
-                                    <p><a href="#" class="reply">Trả lời Bình luận</a></p>
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- END comment-list -->
-
-                        <div class="comment-form-wrap pt-5">
-                            <h3 class="mb-5" style="font-size: 20px; font-weight: bold;">Để lại Bình luận</h3>
-                            <form action="#" class="p-5 bg-light">
-                                <div class="form-group">
-                                    <label for="name">Họ Tên *</label>
-                                    <input type="text" class="form-control" id="name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email *</label>
-                                    <input type="email" class="form-control" id="email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="website">Địa điểm</label>
-                                    <input type="url" class="form-control" id="website">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="message">Bình luận</label>
-                                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" value="Đăng Bình luận" class="btn py-3 px-4 btn-primary">
-                                </div>
-
-                            </form>
-                        </div>
-                    </div>
-
-                </div> <!-- .col-md-8 -->
+            </div> <!-- .col-md-8 -->
 
 
         </div>

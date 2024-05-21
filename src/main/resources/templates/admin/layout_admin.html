@@ -98,6 +98,20 @@
                 </div>
             </div>
         </li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBooking"
+               aria-expanded="true" aria-controls="collapseTour">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Booking</span>
+            </a>
+            <div id="collapseBooking" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Custom Booking:</h6>
+                    <a class="collapse-item" href="/admin/booking">Show</a>
+                    <a class="collapse-item" href="#">Add</a>
+                </div>
+            </div>
+        </li>
 
 
         <!-- Divider -->
@@ -493,6 +507,10 @@
             </div>
             <div th:if="${page == 'tour-add'}">
                 <div th:replace="admin/admin-tour-add.html::AdminTourAdd">
+                </div>
+            </div>
+            <div th:if="${page == 'admin-booking-table'}">
+                <div th:replace="admin/admin-booking-table.html::AdminBookingTable">
                 </div>
             </div>
 

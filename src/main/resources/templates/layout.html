@@ -70,6 +70,10 @@
     <div th:replace="destination-detail.html::DestinationDetailPage">
     </div>
 </div>
+<div th:if="${page == 'booking'}">
+    <div th:replace="booking.html::BookingPage">
+    </div>
+</div>
 <!--code-->
 <section class="ftco-intro ftco-section ftco-no-pt">
     <div class="container">
