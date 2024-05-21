@@ -1,119 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Form</title>
-    <style>
-        body {
-            background: no-repeat url("https://4kwallpapers.com/images/walls/thumbs_3t/16492.jpg") ;
-            background-size: 100%;
-            font-family: Arial, Helvetica, sans-serif;
+    <title>Du lịch Đó đây</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        }
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
 
-        .div-form {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            background-color: rgba(0, 0, 0, 0.48);
-            border: 1px solid #86B817;
-            border-radius: 15px;
-            width: 45%;
-            margin-left: 25%;
-            margin-top: 10em;
-            color: white;
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        }
+    <link rel="stylesheet" href="/assets/css/animate.css">
 
-        input[type=text], input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #86B817;
-            box-sizing: border-box;
-            border-radius: 15px;
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
 
-        }
+    <link rel="stylesheet" href="/assets/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/assets/css/jquery.timepicker.css">
 
-        button {
-            background-color: #86B817;
-            color: #F5F5F5;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-        }
 
-        button:hover {
-            opacity: 0.8;
-        }
-
-        .cancelbtn {
-            width: auto;
-            padding: 10px 18px;
-            background-color: #FE8800;
-        }
-
-        .imgcontainer {
-            text-align: center;
-            margin: 24px 0 12px 0;
-        }
-
-        img.avatar {
-            width: 40%;
-            border-radius: 50%;
-        }
-
-        .container {
-            padding: 16px;
-        }
-
-        span.psw {
-            float: right;
-            padding-top: 16px;
-        }
-
-        /* Change styles for span and cancel button on extra small screens */
-        @media screen and (max-width: 300px) {
-            span.psw {
-                display: block;
-                float: none;
-            }
-
-            .cancelbtn {
-                width: 100%;
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" href="/assets/css/flaticon.css">
+    <link rel="stylesheet" href="/assets/css/loginform.css">
 </head>
-<body>
-<div  class="div-form">
-    <form th:action="@{/login}" method="post" >
-<!--        <div class="imgcontainer">-->
-<!--            <img src="https://i.pinimg.com/736x/60/63/da/6063da107454d50c1d7786cc2c2bac75.jpg" alt="Avatar" style="border-radius: 5%;width: 60%">-->
-<!--        </div>-->
 
-        <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" id="uname" placeholder="Enter Username" name="uname" required>
+<!-- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+   <div class="container">
+     <a class="navbar-brand" href="index.html">Du lịch<span>Đó đây</span></a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="oi oi-menu"></span> Menu
+     </button>
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+     <div class="collapse navbar-collapse" id="ftco-nav">
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+         <li class="nav-item"><a href="about.html" class="nav-link">Về chúng tôi</a></li>
+         <li class="nav-item"><a href="destination.html" class="nav-link">Điểm đến</a></li>
+         <li class="nav-item"><a href="hotel.html" class="nav-link">Khách sạn</a></li>
+         <li class="nav-item"><a href="blog.html" class="nav-link">Bài viết</a></li>
+         <li class="nav-item active"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+         <li class="nav-item"><a href="login.html" class="nav-link">Đăng nhập</a></li>
+       </ul>
+     </div>
+   </div>
+ </nav> -->
+<!-- END nav -->
 
-            <button type="submit" style="border-radius: 15px">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-        </div>
-
-    </form>
-    <div class="container">
-        <button type="button" class="cancelbtn" style="border-radius: 10px">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
+<!-- <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_1.jpg');">
+ <div class="overlay"></div>
+ <div class="container">
+   <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+     <div class="col-md-9 ftco-animate pb-5 text-center">
+      <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Trang chủ <i class="fa fa-chevron-right"></i></a></span> <span>Đăng nhập <i class="fa fa-chevron-right"></i></span></p>
+      <h1 class="mb-0 bread">Nhập tài khoản của bạn</h1>
     </div>
+  </div>
 </div>
+</section> -->
 
+<body class="img js-fullheight" style="background-image: url(/assets/images/bg.jpg);">
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section"></h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="login-wrap p-0">
+                    <h3 class="mb-4 text-center">Nhập tài khoản của bạn</h3>
+                    <form th:action="@{/login}" class="signin-form" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="username" placeholder="Tài khoản" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="password-field" type="password" name="password" class="form-control" placeholder="Mật khẩu"
+                                   required>
+                            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+                        </div>
+                        <div class="form-group d-md-flex">
+                            <div class="w-50">
+                                <label class="checkbox-wrap checkbox-primary">Ghi nhớ
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="w-50 text-md-right">
+                                <a href="#" style="color: #fff">Quên mật khẩu</a>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="w-100 text-center">&mdash; Hoặc Đăng nhập bằng &mdash;</p>
+                    <div class="social d-flex text-center">
+                        <a href="#" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span>
+                            Facebook</a>
+                        <a href="#" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span>
+                            Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/main.js"></script>
 
 </body>
 </html>

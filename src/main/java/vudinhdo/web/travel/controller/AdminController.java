@@ -91,58 +91,9 @@ public class AdminController {
         return "admin/layout_admin";
     }
 
-    //Data
-    @GetMapping("/admin/account")
-    public String getAllAccount(Model model) {
-        List<Accounts> accounts = accountService.getAllAccount();
-        model.addAttribute("accounts", accounts);
-        model.addAttribute("page", "account");
-        return "admin/layout_admin";
-    }
 
-    @GetMapping("/admin/account-add")
-    public String getAddAccount(Model model) {
-        model.addAttribute("page", "account-add");
-        return "admin/layout_admin";
-    }
 
-    @PostMapping("/admin/account-add-form")
-    public String postAddAccount(@RequestParam String fullName,
-                                 @RequestParam String username,
-                                 @RequestParam String email,
-                                 @RequestParam String password,
-                                 @RequestParam String phoneNumber) {
-        Accounts accounts = new Accounts();
-        accounts.setFullName(fullName);
-        accounts.setUsername(username);
-        accounts.setPassword(password);
-        accounts.setEmail(email);
-        accounts.setPhoneNumber(phoneNumber);
-        accountService.saveAccount(accounts);
-        return "redirect:/admin/account";
-    }
 
-    @GetMapping("/admin/city")
-    public String getAllCity(Model model) {
-        model.addAttribute("page", "city");
-        return "admin/layout_admin";
-    }
 
-    @GetMapping("/admin/city-add")
-    public String getAddCity(Model model) {
-        model.addAttribute("page", "city-add");
-        return "admin/layout_admin";
-    }
 
-    @GetMapping("/admin/tour")
-    public String getAllTour(Model model) {
-        model.addAttribute("page", "tour");
-        return "admin/layout_admin";
-    }
-
-    @GetMapping("/admin/tour-add")
-    public String getAddTour(Model model) {
-        model.addAttribute("page", "tour-add");
-        return "admin/layout_admin";
-    }
 }
