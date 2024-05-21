@@ -1,0 +1,36 @@
+<div th:fragment="AdminCityAdd">
+    <div class="container-fluid">
+
+        <h1 class="h3 mb-2 text-gray-800">Add City</h1>
+
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Add City</h6>
+            </div>
+
+            <div class="container" style="margin-bottom: 2em;margin-top: 2em">
+                <form method="post" action="/admin/city-add-form" th:object="${cities}" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="exampleInputFullName1" class="form-label">City Name</label>
+                        <input type="text" class="form-control" name="nameCity" id="exampleInputFullName1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputUsername1" class="form-label">Description</label>
+                        <input type="text" class="form-control" name="descriptionCity" id="exampleInputUsername1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <div class="custom-file">
+                            <input type="file" name="avatarCity" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label"  for="customFile">City Image</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputCreateCity1" class="form-label">Create At</label>
+                        <input type="time" class="form-control" name="timeCreate" id="exampleInputCreateCity1" aria-describedby="emailHelp">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<div th:fragment="AdminTourTable">
+  <div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Tour</h1>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">DataTables Tours</h6>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+            <tr>
+              <th>Tour Name</th>
+              <th>Tour Code</th>
+              <th>Image</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Price</th>
+              <th>Create</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+              <th>Tour Name</th>
+              <th>Tour Code</th>
+              <th>Image</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Price</th>
+              <th>Create</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+            </tfoot>
+            <tbody>
+            <tr th:each="i : ${tours}">
+              <td th:text="${i.nameTour}">Tiger Nixon</td>
+              <td th:text="${i.tourCode}">System Architect</td>
+              <td th:text="${i.imageTourOne}">Edinburgh</td>
+              <td th:text="${i.startDate}">$320,800</td>
+              <td th:text="${i.endDate}">$320,800</td>
+              <td th:text="${i.priceTour + ' $'}">$320,800</td>
+              <td th:text="${i.timeCreate}">$320,800</td>
+              <td>Edit</td>
+              <td>Delete</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

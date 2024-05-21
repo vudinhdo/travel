@@ -1,0 +1,45 @@
+<div th:fragment="DestinationDetailPage">
+
+
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/assets/images/bg_1.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+                <div class="col-md-9 ftco-animate pb-5 text-center">
+                    <h1 class="mb-0 bread">Chi tiết Tour</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container">
+            <div class=" ftco-animate py-md-5 mt-md-5">
+                <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="col-lg-8 ftco-animate py-md-5 mt-md-5 ">
+                        <small th:text="${tour.tourCode}">abcd</small>
+                        <h2 th:text="${tour.nameTour}">Sapa - Hành Trình Khám Phá Vùng Đất Mộc Mạc Vùng Cao</h2>
+                    </div>
+                    <div class="col-lg-4 sidebar ftco-animate py-md-5 mt-5">
+                        <p><a th:href=" ${tour.id} + ${'/booking'}" class="btn btn-primary py-3 px-4 w-100">Đặt ngay</a></p>
+                        <p><a href="#" class="btn btn-primary py-3 px-4 w-100">Bạn cần giúp đỡ?</a></p>
+                    </div>
+                </div>
+                <p>
+                    <img th:src="${'/assets/images/tours/'+tour.imageTourOne}" alt="" class="img-fluid w-100">
+                </p>
+
+                <div class="container mt-5 text-primary shadow-lg p-3 mb-5 bg-white rounded">
+                    <p th:text="${'Ngày khởi hành: '} + ${tour.startDate}">1</p>
+                    <p th:text="${'Ngày kết thúc: '} + ${ tour.endDate}">2</p>
+                    <p th:text="${'Giá : '} + ${tour.priceTour} + ${'vnd/người'}">3</p>
+                    <p>4</p>
+                </div>
+
+            </div> <!-- .col-md-8 -->
+
+
+        </div>
+    </section> <!-- .section -->
+
+</div>

@@ -3,7 +3,10 @@ package vudinhdo.web.travel.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.util.List;
 
 @Entity
 @Data
@@ -18,13 +21,16 @@ public class Tours {
     private String imageTourTwo;
     private String imageTourThree;
     private Integer priceTour;
-    private LocalTime startDate;
-    private LocalTime endDate;
-    private LocalTime timeCreate;
+    private LocalDate startDate;
+    private LocalDate endDate;
+    private LocalDateTime timeCreate;
     private LocalTime timeUpdate;
     @ManyToOne
     @JoinColumn(name = "city_id")
     private Cities cities;
+
+    @OneToMany(mappedBy = "tours")
+    private List<Booking> booking;
 
 
 
