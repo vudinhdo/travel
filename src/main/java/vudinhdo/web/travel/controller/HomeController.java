@@ -13,57 +13,24 @@ public class HomeController {
     }
 
     @GetMapping("/about")
-    public String about(Model model){
+    public String getAbout(Model model){
         model.addAttribute("page" , "about");
         return "layout";
     }
-
-    @GetMapping("/Error404")
-    public String file404(Model model){
-        model.addAttribute("page" , "Error404");
-        return "layout";
-    }
-
-    @GetMapping("/booking")
-    public String booking(Model model){
-        model.addAttribute("page" , "booking");
-        return "layout";
-    }
-
     @GetMapping("/contact")
-    public String contact(Model model){
+    public String getContact(Model model){
         model.addAttribute("page" , "contact");
         return "layout";
     }
-
-    @GetMapping("/destination")
-    public String destination(Model model){
-        model.addAttribute("page" , "destination");
+    @GetMapping("/hotel")
+    public String getHotel(Model model){
+        model.addAttribute("page" , "hotel");
+        return "layout";
+    }
+    @GetMapping("/blog")
+    public String getBlog(Model model){
+        model.addAttribute("page" , "blog");
         return "layout";
     }
 
-    @GetMapping("/package")
-    public String packageFile(Model model){
-        model.addAttribute("page" , "package");
-        return "layout";
-    }
-
-    @GetMapping("/service")
-    public String service(Model model){
-        model.addAttribute("page" , "service");
-        return "layout";
-    }
-
-    @GetMapping("/team")
-    public String team(Model model){
-        model.addAttribute("page" , "team");
-        return "layout";
-    }
-
-    @GetMapping("/testimonial")
-    public String testimonial(Model model){
-        model.addAttribute("page" , "testimonial");
-        return "layout";
-    }
-    
 }

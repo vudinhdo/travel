@@ -1,86 +1,97 @@
+<div th:fragment="ContactPage">
 
-    <div th:fragment="contact">
-        <!-- Contact Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
-                    <h1 class="mb-5">Contact For Any Query</h1>
+
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/assets/images/bg_1.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+                <div class="col-md-9 ftco-animate pb-5 text-center">
+                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Trang chủ <i
+                            class="fa fa-chevron-right"></i></a></span> <span>Liên hệ  <i
+                            class="fa fa-chevron-right"></i></span></p>
+                    <h1 class="mb-0 bread">Liên hệ Chúng tôi</h1>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h5>Get In Touch</h5>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos</p>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
-                                <i class="fa fa-map-marker-alt text-white"></i>
-                            </div>
-                            <div class="ms-3">
-                                <h5 class="text-primary">Office</h5>
-                                <p class="mb-0">123 Street, New York, USA</p>
-                            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb contact-section mb-4">
+        <div class="container">
+            <div class="row d-flex contact-info">
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-map-marker"></span>
                         </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
-                                <i class="fa fa-phone-alt text-white"></i>
-                            </div>
-                            <div class="ms-3">
-                                <h5 class="text-primary">Mobile</h5>
-                                <p class="mb-0">+012 345 67890</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
-                                <i class="fa fa-envelope-open text-white"></i>
-                            </div>
-                            <div class="ms-3">
-                                <h5 class="text-primary">Email</h5>
-                                <p class="mb-0">info@example.com</p>
-                            </div>
-                        </div>
+                        <h3 class="mb-2">Địa chỉ</h3>
+                        <p>41A Đ. Phú Diễn, Phú Diễn, Bắc Từ Liêm, Hà Nội, Việt Nam</p>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <iframe class="position-relative rounded w-100 h-100"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                                frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
-                                tabindex="0"></iframe>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-phone"></span>
+                        </div>
+                        <h3 class="mb-2">Số điện thoại</h3>
+                        <p><a href="tel://1234567920">+84 372133179</a></p>
                     </div>
-                    <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-paper-plane"></span>
+                        </div>
+                        <h3 class="mb-2">Địa chỉ Email</h3>
+                        <p><a href="mailto:info@yoursite.com">nhom3dh11c1@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-globe"></span>
+                        </div>
+                        <h3 class="mb-2">Trang Web</h3>
+                        <p><a href="#">duLichdoDay.com</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
+    </section>
 
-    </div>
+    <section class="ftco-section contact-section ftco-no-pt">
+        <div class="container">
+            <div class="row block-9">
+                <div class="col-md-6 order-md-last d-flex">
+                    <form action="#" class="bg-light p-5 contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Tên của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Địa chỉ Email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Chủ đề">
+                        </div>
+                        <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="7" class="form-control"
+                                  placeholder="Lời nhắn"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi Lời nhắn" class="btn btn-primary py-3 px-5">
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="col-md-6 d-flex">
+                    <!-- <div id="map" class="bg-white"></div> -->
+                    <iframe id="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.655070159577!2d105.75962797517685!3d21.046483180607254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454c3ce577141%3A0xb1a1ac92701777bc!2sHanoi%20University%20of%20Natural%20Resources%20and%20Environment!5e0!3m2!1sen!2s!4v1696144449703!5m2!1sen!2s"
+                            width="600" height="560" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
